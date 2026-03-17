@@ -24,13 +24,13 @@ const Navigation = () => {
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("no-scroll");
     } else {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove("no-scroll");
     }
     // Cleanup function to ensure overflow is reset when component unmounts
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove("no-scroll");
     };
   }, [isOpen]); // Add isOpen to the dependency array
 
