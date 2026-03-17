@@ -74,6 +74,7 @@ h5::before {
 /* Mobile */
 @media screen and (max-width: 767px) {
 
+    /* Totoal Income */
     .total-income {
         font-size: 1.5rem;
         text-align: center;
@@ -89,34 +90,49 @@ h5::before {
         flex-direction: column;
     }
 
+    /* Form */
     .form-container {
         width: 100%;
     }
 
+    form .input-control textarea {
+        width: 13.5rem;
+    }
+
+    /* Incomes */
     .incomes {
         width: 100%;
     }
 
     .income-con {
-        padding: 10px 10px;
+        padding: 5px 5px;
+        font-size: 12px;
+    }
 
-        .icon i {
-            font-size: 26px;
+    .icon {
+        height: 50px;
+        width: 60px;
+
+        i {
+            font-size: 20px;
         }
     }
 
-    .inner-content {
-        display: flex;
-        gap: 20px;
+    .content h5 {
+        font-size: 18px;
+    }
 
-        .delete-btn {
-            font-size: 14px;
-        }
+    .inner-content p {
+        font-size: 12px;
+    }
 
-        button {
-            height: 43px;
-            width: 43px;
-        }
+    .inner-content button {
+        height: 35px;
+        width: 35px;
+    }
+
+    .inner-content button i {
+        font-size: 12px;
     }
 }
 
