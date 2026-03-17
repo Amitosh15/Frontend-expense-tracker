@@ -74,7 +74,6 @@ h5::before {
 /* Mobile */
 @media screen and (max-width: 767px) {
 
-    /* Total income */
     .total-income {
         font-size: 1.5rem;
         text-align: center;
@@ -98,14 +97,26 @@ h5::before {
         width: 100%;
     }
 
-    .inner-content {
-        display: flex;
-        gap: 20px;
+    .income-con {
+        padding: 10px 10px;
+
+        .icon i {
+            font-size: 26px;
+        }
     }
 
     .inner-content {
-        grid-template-columns: 1fr;
-        gap: 10px;
+        display: flex;
+        gap: 20px;
+
+        .delete-btn {
+            font-size: 14px;
+        }
+
+        button {
+            height: 43px;
+            width: 43px;
+        }
     }
 }
 
