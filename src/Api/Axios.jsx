@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://backend-expense-tracker-c0m2.onrender.com//api/v1",
+  baseURL: "https://backend-expense-tracker-c0m2.onrender.com/api/v1",
 });
 
 // Request interceptor to add the token to headers
