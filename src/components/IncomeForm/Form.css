@@ -1,0 +1,83 @@
+form button {
+    padding: 8px;
+    width: 10rem;
+    background: var(--color-accent);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #fff;
+
+    i {
+        color: #fff;
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+    &:hover {
+        transform: scale(1.04);
+    }
+
+    &:active {
+        background-color: #ae3458;
+    }
+}
+
+form input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: transparent;
+    resize: none;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
+    color: rgba(34, 34, 96, 0.9);
+}
+
+.input-control input {
+    width: 100%;
+}
+
+select {
+    color: rgba(34, 34, 96, 0.4);
+
+    &:focus,
+    &:active {
+        color: rgba(34, 34, 96, 1);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    form {
+        gap: 10px;
+        width: 60vw;
+        margin: auto;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    form {
+        gap: 8px;
+    }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    form {
+        gap: 10px;
+    }
+}
+
+/* Desktop / Large screens */
+@media screen and (min-width: 1440px) {
+    form {
+        gap: 18px;
+    }
+}

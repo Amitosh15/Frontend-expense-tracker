@@ -1,0 +1,87 @@
+.container {
+    padding: 2rem 1.5rem;
+    margin: 20px 20px 20px 0;
+    height: calc(100vh - 40px);
+    width: calc(100% - 20px);
+    background: #fcf6f9c7;
+    border: 3px solid #FFFFFF;
+    border-radius: 32px;
+    overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/*  */
+.login-form,
+.signup-form {
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 40px rgba(0, 0, 0, 0.06);
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .container {
+        margin: 0;
+        padding: 20px 10px;
+        width: calc(100vw -10px);
+        height: auto;
+        margin: 10px 10px;
+        height: calc(100vh - 100px);
+    }
+
+    .login-form {
+        width: 300px;
+        height: 400px;
+        padding: 1rem;
+    }
+
+    input:focus {
+        border: 1px solid black;
+    }
+
+    .signup-form {
+        padding: 2rem;
+    }
+
+    form input {
+        width: 12rem;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .login-form {
+        height: 450px;
+
+        form {
+            gap: 22px;
+        }
+    }
+
+    .signup-form {
+        height: 520px;
+
+        form {
+            gap: 22px;
+        }
+    }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+        padding: 10px 18px;
+    }
+}

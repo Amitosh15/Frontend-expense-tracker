@@ -1,0 +1,204 @@
+.total-income {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    gap: 0.5rem;
+
+    span {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #42AD00;
+    }
+}
+
+.icon {
+    border: 2px solid #FFFFFF;
+
+    i {
+        font-size: 2.5rem;
+        color: #222260;
+    }
+}
+
+.income-con {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.06);
+    margin-bottom: 12px;
+    padding: 12px 0
+}
+
+.delete-btn button {
+    border-radius: 50%;
+    float: right;
+    margin-right: 8px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background-color: #222260;
+}
+
+.delete-btn button i {
+    font-size: 15px;
+    color: #fff;
+}
+
+h5 {
+    position: relative;
+    padding-left: 32px;
+    font-weight: 600;
+}
+
+h5::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-30%);
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background: rgb(68, 201, 68);
+}
+
+.inner-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+/* -------------------- Responsive --------------- */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+    /* Total income */
+    .total-income {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .total-income span {
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    .income-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .incomes {
+        width: 100%;
+    }
+
+    .inner-content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .inner-content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Total Income */
+    .total-income {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .total-income span {
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    .incomes {
+        width: 100%;
+    }
+
+    /* Income content */
+    .income-content {
+        flex-direction: column;
+
+        .form-container {
+            margin: auto;
+        }
+    }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .total-income {
+        font-size: 1.7rem;
+        padding: 8px;
+        margin: 10px 0;
+    }
+
+    .total-income span {
+        font-size: clamp(1.75rem, 5vw, 2rem);
+        font-weight: 700;
+        color: #42AD00;
+    }
+
+    .income-con {
+        padding: 6px 0;
+    }
+
+    .icon {
+        margin-left: 10px;
+        height: 70px;
+        width: 70px;
+    }
+
+    .income-con .icon i {
+        font-size: 2rem;
+    }
+
+    .income-con .content {
+        h5 {
+            font-size: 18px;
+        }
+
+        .inner-content {
+            font-size: 16px;
+        }
+
+        button {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        button i {
+            font-size: 12px;
+        }
+    }
+}
+
+/* Desktop / Large screens */
+@media screen and (min-width: 1440px) {
+
+    /* Total Income */
+    .total-income {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .total-income span {
+        font-size: 2rem;
+        display: block;
+    }
+
+
+}

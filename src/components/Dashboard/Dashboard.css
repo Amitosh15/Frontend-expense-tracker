@@ -1,0 +1,163 @@
+h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.stats-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.chart-con {
+    height: 280px;
+}
+
+.amount-con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.income,
+.expense {
+    grid-column: span 2;
+}
+
+.income,
+.expense,
+.balance {
+    background: #FCF6F9;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 1rem;
+    padding: 1rem;
+
+    p {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+}
+
+
+.balance {
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: var(--color-green);
+        opacity: 0.6;
+        font-size: 2.5rem;
+    }
+}
+
+/* -------------------- Responsive --------------- */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 5px;
+    }
+
+    .chart-con {
+        height: 30vh;
+    }
+
+    .balance {
+        align-items: start;
+    }
+
+    .stats-con {
+        grid-template-columns: 1fr;
+    }
+
+    .amount-con {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .income,
+    .expense,
+    .balance {
+        grid-column: span 1;
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+
+    .balance {
+        grid-column: span 1;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .stats-con {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .income,
+    .expense,
+    .balance {
+        grid-column: span 2;
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .chart-con {
+        height: 200px;
+    }
+
+    .income,
+    .expense,
+    .balance {
+        padding: 0.5rem;
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+
+    .amount-con h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Desktop / Large screens */
+@media screen and (min-width: 1440px) {
+
+    .income,
+    .expense,
+    .balance {
+        text-align: center;
+        padding: 0.5rem;
+
+        p {
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+    }
+
+    .amount-con h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+}
